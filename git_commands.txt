@@ -1,0 +1,55 @@
+================================================================================
+GIT COMMANDS DOCUMENTATION FILE
+Student: Jatin Chulet
+Repository: https://github.com/jatinnchulet/Git-Implementation.git
+Assignment: Question 1 - Git & GitHub Workflow
+================================================================================
+
+1. git init -b main
+   Initializes a new empty Git repository inside the project folder with 'main' as the primary branch.
+
+2. git status
+   Displays the state of the working directory and staging area, showing tracked, modified, and untracked files.
+
+3. git add index.html about.html
+   Stages specified files to prepare them for recording in the initial commit.
+
+4. git commit -m "Initial commit: Add index.html and about.html"
+   Records snapshots of the staged files to repository history with an explanatory message.
+
+5. git checkout -b feature
+   Creates a new branch named 'feature' and immediately switches the workspace context to it.
+
+6. git checkout main
+   Switches the active branch context from 'feature' back to the 'main' branch.
+
+7. git merge --no-ff feature -m "Merge branch 'feature' into main"
+   Merges changes from the 'feature' branch into 'main' using a dedicated merge commit to preserve branch activity in history.
+
+8. git log --graph --oneline --all
+   Displays a visual ASCII graph showing commit history and branch topologies across all branches.
+
+9. git reset HEAD~1
+   Undoes the most recent commit locally by rewinding HEAD by one commit while keeping modifications in the working tree.
+
+10. git revert HEAD
+    Creates a new commit that safely inverts the changes of the previous commit, preserving audit history in shared repositories.
+
+11. git remote add origin https://github.com/jatinnchulet/Git-Implementation.git
+    Connects the local Git repository to the remote public repository hosted on GitHub.
+
+12. git remote -v
+    Lists all configured remote connections along with their fetch and push target URLs.
+
+13. git branch -M main
+    Ensures the current primary branch is named 'main' before pushing to GitHub.
+
+14. git push -u origin feature
+    Pushes the 'feature' branch to GitHub so branch development history is visible remotely.
+
+15. git push -u origin main
+    Uploads commits from the local 'main' branch to the remote GitHub repository and sets upstream tracking.
+
+16. git status --ignored
+    Lists files and directories that are ignored by Git rules defined in the .gitignore file.
+================================================================================
